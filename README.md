@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/about-me.svg" width="100%" alt="Astana, Kazakhstan · AITU — Building native SwiftUI apps and Python/Node backends" />
+  <img src="./assets/about.svg" width="100%" alt="Astana, Kazakhstan — I build fast iOS apps & real tools" />
 </p>
 
 <p align="center">
