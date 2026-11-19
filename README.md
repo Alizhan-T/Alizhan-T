@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://alizhan-t.github.io/">
-    <img src="./assets/hero.svg" width="100%" alt="Alizhan Toleukhan — iOS & Full-Stack Engineer" />
+    <img src="./assets/header-v2.svg" width="100%" alt="Alizhan Toleukhan — iOS & Full-Stack Engineer" />
   </a>
 </p>
 
