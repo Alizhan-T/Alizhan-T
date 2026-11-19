@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/Alizhan-T?tab=repositories">
-    <img src="./assets/projects.svg" width="100%" alt="Shipped Work: FireWatch-AI, jas-crm, KitchenApp" />
+    <img src="./assets/work.svg" width="100%" alt="Shipped Work: FireWatch-AI, jas-crm, KitchenApp" />
   </a>
 </p>
 
