@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/about.svg" width="100%" alt="Astana, Kazakhstan — I build fast iOS apps & real tools" />
+  <img src="./assets/about-v2.svg" width="100%" alt="Astana, Kazakhstan — I build fast iOS apps & real tools" />
 </p>
 
 <p align="center">
