@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://alizhan-t.github.io/">
-    <img src="./assets/header-v2.svg" width="100%" alt="Alizhan Toleukhan — iOS & Full-Stack Engineer" />
+    <img src="./assets/header-v3.svg" width="100%" alt="Alizhan Toleukhan — iOS & Full-Stack Engineer" />
   </a>
 </p>
 
@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/stack.svg" width="100%" alt="Tech Stack: Python, Swift, Node.js, Flutter, Solidity, Docker" />
+  <img src="./assets/stack-v2.svg" width="100%" alt="Tech Stack: Python, Swift, Node.js, Flutter, Solidity, Docker" />
 </p>
 
 <p align="center">
