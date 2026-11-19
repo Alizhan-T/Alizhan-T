@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/tech-stack.svg" width="100%" alt="Tech Stack: Python, Swift, Node.js, Flutter, Solidity, Docker" />
+  <img src="./assets/tech-stack.svg?v=2" width="100%" alt="Tech Stack: Python, Swift, Node.js, Flutter, Solidity, Docker" />
 </p>
 
 <p align="center">
