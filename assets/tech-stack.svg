@@ -1,15 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="850" height="310" viewBox="0 0 850 310" fill="none" role="img" aria-labelledby="stackTitle stackDesc">
   <title id="stackTitle">Tech Stack</title>
-  <desc id="stackDesc">Six cards with abstract patterns: Python, Swift, Node.js, Flutter, Solidity, Docker.</desc>
+  <desc id="stackDesc">Six animated cards with rotating geometric patterns: Python, Swift, Node.js, Flutter, Solidity, Docker.</desc>
   <style>
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif; }
     .mono { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; }
-    .bob { animation: bob 6s ease-in-out infinite; }
-    .bob-slow { animation: bob 8s ease-in-out infinite reverse; }
-    .hex-spin { transform-origin: 370px 148px; animation: hexspin 14s linear infinite; }
-    @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
-    @keyframes hexspin { from { transform: rotate(0deg); } to { transform: rotate(60deg); } }
-    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    .sol-flip { transform-box: fill-box; transform-origin: center; animation: flip3d 5s ease-in-out infinite; }
+    .stripes { animation: slide 3.5s linear infinite; }
+    @keyframes flip3d {
+      0%, 100% { transform: scaleX(1) translateY(0); }
+      25% { transform: scaleX(0.18) translateY(-4px); }
+      50% { transform: scaleX(-1) translateY(0); }
+      75% { transform: scaleX(0.18) translateY(-4px); }
+    }
+    @keyframes slide {
+      from { transform: translateY(0); }
+      to { transform: translateY(52px); }
+    }
   </style>
   <defs>
     <clipPath id="stackClip"><rect x="0.5" y="0.5" width="849" height="309" rx="14"/></clipPath>
@@ -49,18 +55,19 @@
     <text class="sans" x="425" y="46" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="6" fill="#F3DEC2">TECH STACK</text>
     <rect x="510" y="41" width="58" height="1" fill="url(#lineR)"/>
 
-    <!-- 01 Python -->
+    <!-- 01 Python: orbital 360 rotation -->
     <rect x="32.5" y="76.5" width="139" height="209" rx="12" fill="#12131B" stroke="#1F222E"/>
     <g clip-path="url(#c1)">
       <rect x="32" y="76" width="140" height="150" fill="#1B1838"/>
-      <circle cx="102" cy="151" r="66" stroke="#E6C29F" stroke-opacity=".45"/>
-      <g class="bob">
-        <circle cx="84" cy="134" r="46" fill="#7C6CF6"/>
-        <circle cx="70" cy="114" r="5" fill="#0D0E14"/>
-      </g>
-      <g class="bob-slow">
-        <circle cx="122" cy="172" r="46" fill="#D5C8FF" fill-opacity=".92"/>
-        <circle cx="136" cy="192" r="5" fill="#0D0E14"/>
+      <circle cx="102" cy="151" r="64" stroke="#E6C29F" stroke-opacity=".5" stroke-dasharray="8 6">
+        <animateTransform attributeName="transform" type="rotate" from="360 102 151" to="0 102 151" dur="14s" repeatCount="indefinite"/>
+      </circle>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 102 151" to="360 102 151" dur="9s" repeatCount="indefinite"/>
+        <circle cx="84" cy="134" r="42" fill="#7C6CF6"/>
+        <circle cx="72" cy="116" r="5" fill="#0D0E14"/>
+        <circle cx="120" cy="168" r="42" fill="#D5C8FF" fill-opacity=".92"/>
+        <circle cx="132" cy="186" r="5" fill="#0D0E14"/>
       </g>
       <rect x="32" y="186" width="140" height="40" fill="url(#fade)"/>
     </g>
@@ -68,67 +75,87 @@
     <text class="sans" x="102" y="256" text-anchor="middle" font-size="15" font-weight="600" fill="#FFFFFF">Python</text>
     <text class="mono" x="102" y="274" text-anchor="middle" font-size="10" letter-spacing="1" fill="#71717A">ML · CV</text>
 
-    <!-- 02 Swift -->
+    <!-- 02 Swift: rotating orbital arcs & sun -->
     <rect x="184.5" y="76.5" width="107" height="209" rx="12" fill="#12131B" stroke="#1F222E"/>
     <g clip-path="url(#c2)">
       <rect x="184" y="76" width="108" height="150" fill="#17141F"/>
-      <circle class="bob" cx="268" cy="104" r="9" fill="#F3DEC2"/>
-      <path d="M194 98 C234 110 264 140 280 186" stroke="#E6C29F" stroke-opacity=".7" stroke-width="1.5"/>
-      <path d="M194 118 C228 128 254 152 266 186" stroke="#D5C8FF" stroke-opacity=".5" stroke-width="1.5"/>
-      <path d="M184 226 L184 170 C214 150 250 190 292 130 L292 226 Z" fill="#2A264A"/>
-      <path d="M184 226 L184 196 C216 170 246 200 292 152 L292 226 Z" fill="#E6C29F" fill-opacity=".55"/>
-      <path d="M184 226 L184 214 C220 194 250 216 292 178 L292 226 Z" fill="#F3DEC2"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 238 148" to="360 238 148" dur="10s" repeatCount="indefinite"/>
+        <circle cx="238" cy="148" r="44" stroke="#E6C29F" stroke-opacity=".55" stroke-width="1.5" stroke-dasharray="48 28"/>
+        <circle cx="238" cy="104" r="7" fill="#F3DEC2"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="360 238 148" to="0 238 148" dur="7s" repeatCount="indefinite"/>
+        <circle cx="238" cy="148" r="28" stroke="#D5C8FF" stroke-opacity=".65" stroke-width="1.5" stroke-dasharray="30 22"/>
+        <circle cx="266" cy="148" r="4.5" fill="#7C6CF6"/>
+      </g>
+      <path d="M184 226 L184 182 C214 166 250 198 292 162 L292 226 Z" fill="#2A264A"/>
+      <path d="M184 226 L184 202 C216 184 246 206 292 176 L292 226 Z" fill="#E6C29F" fill-opacity=".6"/>
       <rect x="184" y="186" width="108" height="40" fill="url(#fade)"/>
     </g>
     <text class="mono" x="196" y="96" font-size="10" fill="#FFFFFF" fill-opacity=".55">02</text>
     <text class="sans" x="238" y="256" text-anchor="middle" font-size="15" font-weight="600" fill="#FFFFFF">Swift</text>
     <text class="mono" x="238" y="274" text-anchor="middle" font-size="10" letter-spacing="1" fill="#71717A">iOS</text>
 
-    <!-- 03 Node.js -->
+    <!-- 03 Node.js: counter-rotating nested hexagons -->
     <rect x="304.5" y="76.5" width="131" height="209" rx="12" fill="#12131B" stroke="#1F222E"/>
     <g clip-path="url(#c3)">
       <rect x="304" y="76" width="132" height="150" fill="#121022"/>
-      <polygon points="370,84 425.4,116 425.4,180 370,212 314.6,180 314.6,116" fill="#1B1838" stroke="#7C6CF6" stroke-opacity=".5"/>
-      <g class="hex-spin">
-        <polygon points="370,102 409.8,125 409.8,171 370,194 330.2,171 330.2,125" stroke="#D5C8FF" stroke-opacity=".6"/>
-      </g>
-      <polygon points="370,120 394.2,134 394.2,162 370,176 345.8,162 345.8,134" fill="#7C6CF6"/>
-      <polygon points="370,136 380.4,142 380.4,154 370,160 359.6,154 359.6,142" fill="#F3DEC2"/>
+      <polygon points="370,84 425.4,116 425.4,180 370,212 314.6,180 314.6,116" fill="#1B1838" stroke="#7C6CF6" stroke-opacity=".6" stroke-width="1.2">
+        <animateTransform attributeName="transform" type="rotate" from="0 370 148" to="360 370 148" dur="16s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="370,102 409.8,125 409.8,171 370,194 330.2,171 330.2,125" stroke="#D5C8FF" stroke-opacity=".75" stroke-width="1.4">
+        <animateTransform attributeName="transform" type="rotate" from="360 370 148" to="0 370 148" dur="9s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="370,120 394.2,134 394.2,162 370,176 345.8,162 345.8,134" fill="#7C6CF6">
+        <animateTransform attributeName="transform" type="rotate" from="0 370 148" to="360 370 148" dur="6s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="370,136 380.4,142 380.4,154 370,160 359.6,154 359.6,142" fill="#F3DEC2">
+        <animateTransform attributeName="transform" type="rotate" from="360 370 148" to="0 370 148" dur="4s" repeatCount="indefinite"/>
+      </polygon>
       <rect x="304" y="186" width="132" height="40" fill="url(#fade)"/>
     </g>
     <text class="mono" x="316" y="96" font-size="10" fill="#FFFFFF" fill-opacity=".55">03</text>
     <text class="sans" x="370" y="256" text-anchor="middle" font-size="15" font-weight="600" fill="#FFFFFF">Node.js</text>
     <text class="mono" x="370" y="274" text-anchor="middle" font-size="10" letter-spacing="1" fill="#71717A">BACKEND</text>
 
-    <!-- 04 Flutter -->
+    <!-- 04 Flutter: sliding stripes + rotating chevron -->
     <rect x="448.5" y="76.5" width="115" height="209" rx="12" fill="#12131B" stroke="#1F222E"/>
     <g clip-path="url(#c4)">
       <rect x="448" y="76" width="116" height="150" fill="#14121E"/>
       <g transform="rotate(-35 506 151)">
-        <rect x="416" y="98" width="180" height="18" fill="#2A264A"/>
-        <rect x="416" y="124" width="180" height="18" fill="#7C6CF6"/>
-        <rect x="416" y="150" width="180" height="18" fill="#D5C8FF"/>
-        <rect x="416" y="176" width="180" height="18" fill="#7C6CF6" fill-opacity=".5"/>
-        <rect x="416" y="202" width="180" height="18" fill="#2A264A"/>
+        <g class="stripes">
+          <rect x="416" y="46" width="180" height="18" fill="#D5C8FF"/>
+          <rect x="416" y="72" width="180" height="18" fill="#7C6CF6" fill-opacity=".5"/>
+          <rect x="416" y="98" width="180" height="18" fill="#2A264A"/>
+          <rect x="416" y="124" width="180" height="18" fill="#7C6CF6"/>
+          <rect x="416" y="150" width="180" height="18" fill="#D5C8FF"/>
+          <rect x="416" y="176" width="180" height="18" fill="#7C6CF6" fill-opacity=".5"/>
+          <rect x="416" y="202" width="180" height="18" fill="#2A264A"/>
+        </g>
       </g>
-      <polygon class="bob" points="494,112 522,112 488,146 522,180 494,180 460,146" fill="#F3DEC2" stroke="#12131B" stroke-width="2"/>
+      <polygon points="494,114 520,114 488,146 520,178 494,178 462,146" fill="#F3DEC2" stroke="#12131B" stroke-width="2">
+        <animateTransform attributeName="transform" type="rotate" from="0 496 146" to="360 496 146" dur="10s" repeatCount="indefinite"/>
+      </polygon>
       <rect x="448" y="186" width="116" height="40" fill="url(#fade)"/>
     </g>
     <text class="mono" x="460" y="96" font-size="10" fill="#FFFFFF" fill-opacity=".55">04</text>
     <text class="sans" x="506" y="256" text-anchor="middle" font-size="15" font-weight="600" fill="#FFFFFF">Flutter</text>
     <text class="mono" x="506" y="274" text-anchor="middle" font-size="10" letter-spacing="1" fill="#71717A">MOBILE</text>
 
-    <!-- 05 Solidity -->
+    <!-- 05 Solidity: spinning dashed ring + 3D flipping crystal -->
     <rect x="576.5" y="76.5" width="127" height="209" rx="12" fill="#12131B" stroke="#1F222E"/>
     <g clip-path="url(#c5)">
       <rect x="576" y="76" width="128" height="150" fill="#15121C"/>
       <rect x="576" y="76" width="128" height="150" fill="url(#solDots)"/>
-      <circle cx="640" cy="151" r="62" stroke="#7C6CF6" stroke-opacity=".35" stroke-dasharray="3 5"/>
-      <g class="bob">
-        <polygon points="640,92 676,148 640,168 604,148" fill="#D5C8FF"/>
-        <polygon points="640,92 676,148 640,168" fill="#7C6CF6"/>
-        <polygon points="604,158 640,178 676,158 640,210" fill="#E6C29F"/>
-        <polygon points="640,178 676,158 640,210" fill="#F3DEC2"/>
+      <circle cx="640" cy="151" r="56" stroke="#7C6CF6" stroke-opacity=".55" stroke-width="1.4" stroke-dasharray="6 6">
+        <animateTransform attributeName="transform" type="rotate" from="0 640 151" to="360 640 151" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <g class="sol-flip">
+        <polygon points="640,94 674,148 640,168 606,148" fill="#D5C8FF"/>
+        <polygon points="640,94 674,148 640,168" fill="#7C6CF6"/>
+        <polygon points="606,158 640,178 674,158 640,208" fill="#E6C29F"/>
+        <polygon points="640,178 674,158 640,208" fill="#F3DEC2"/>
       </g>
       <rect x="576" y="186" width="128" height="40" fill="url(#fade)"/>
     </g>
@@ -136,13 +163,17 @@
     <text class="sans" x="640" y="256" text-anchor="middle" font-size="15" font-weight="600" fill="#FFFFFF">Solidity</text>
     <text class="mono" x="640" y="274" text-anchor="middle" font-size="10" letter-spacing="1" fill="#71717A">WEB3</text>
 
-    <!-- 06 Docker -->
+    <!-- 06 Docker: spinning orbital ring + rocking container ship -->
     <rect x="716.5" y="76.5" width="101" height="209" rx="12" fill="#12131B" stroke="#1F222E"/>
     <g clip-path="url(#c6)">
       <rect x="716" y="76" width="102" height="150" fill="#13111D"/>
+      <circle cx="767" cy="148" r="42" stroke="#D5C8FF" stroke-opacity=".35" stroke-width="1.2" stroke-dasharray="10 8">
+        <animateTransform attributeName="transform" type="rotate" from="360 767 148" to="0 767 148" dur="10s" repeatCount="indefinite"/>
+      </circle>
       <path d="M716 226 L716 186 C736 176 752 198 772 186 S806 178 818 190 L818 226 Z" fill="#2A264A"/>
       <path d="M716 226 L716 204 C740 196 756 212 776 204 S806 198 818 206 L818 226 Z" fill="#7C6CF6" fill-opacity=".35"/>
-      <g class="bob">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-5 767 166;5 767 166;-5 767 166" dur="3.6s" repeatCount="indefinite"/>
         <path d="M726 162 H810 C808 180 790 192 766 192 C744 192 730 182 726 162 Z" fill="#7C6CF6"/>
         <rect x="733" y="144" width="14" height="14" rx="3" fill="#D5C8FF"/>
         <rect x="751" y="144" width="14" height="14" rx="3" fill="#7C6CF6" stroke="#D5C8FF" stroke-opacity=".6"/>
