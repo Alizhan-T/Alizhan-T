@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="850" height="250" viewBox="0 0 850 250" fill="none" role="img" aria-labelledby="heroTitle heroDesc">
   <title id="heroTitle">Welcome to Alizhan Github_</title>
-  <desc id="heroDesc">Dark hero card with an animated 3D vortex funnel, glowing Welcome to Alizhan Github headline, and terminal prompt $ git push --force-of-will.</desc>
+  <desc id="heroDesc">Dark hero card with an animated 3D vortex funnel, glowing Welcome to Alizhans Github headline, and terminal prompt $ git push --force-of-will.</desc>
   <style>
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif; }
     .mono { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; }
