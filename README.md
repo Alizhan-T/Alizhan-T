@@ -28,6 +28,6 @@
 
 <p align="center">
   <a href="https://alizhan-t.github.io/#eye">
-    <img src="./assets/ascii-eye.svg" width="100%" alt="Minimalist monochrome ASCII eye" />
+    <img src="./assets/eye-v2.svg" width="100%" alt="ASCII Vision & Telemetry Footer" />
   </a>
 </p>
