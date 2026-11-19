@@ -17,5 +17,7 @@
 <br />
 
 <p align="center">
-  <img src="./assets/ascii-eye.svg" width="100%" alt="ASCII Vision — Code eye tracking cursor" />
+  <a href="https://alizhan-t.github.io/#eye">
+    <img src="./assets/ascii-eye.svg" width="100%" alt="Minimalist ASCII eye" />
+  </a>
 </p>
