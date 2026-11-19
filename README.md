@@ -25,3 +25,9 @@
 <p align="center">
   <img src="./assets/tech-stack.svg" width="100%" alt="Tech Stack: Python, Swift, Node.js, Flutter, Solidity, Docker" />
 </p>
+
+<p align="center">
+  <a href="https://alizhan-t.github.io/#eye">
+    <img src="./assets/ascii-eye.svg" width="100%" alt="Minimalist monochrome ASCII eye" />
+  </a>
+</p>
