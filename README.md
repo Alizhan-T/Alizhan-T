@@ -13,3 +13,9 @@
 <p align="center">
   <img src="./assets/tech-stack.svg" width="100%" alt="Tech Stack — Python, Swift, Node.js, Flutter, Solidity, Docker" />
 </p>
+
+<br />
+
+<p align="center">
+  <img src="./assets/ascii-eye.svg" width="100%" alt="ASCII Vision — Code eye tracking cursor" />
+</p>
