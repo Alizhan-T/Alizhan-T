@@ -1,119 +1,100 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="850" height="250" viewBox="0 0 850 250" fill="none" role="img" aria-labelledby="workTitle workDesc">
-  <title id="workTitle">Featured Work</title>
-  <desc id="workDesc">FireWatch-AI: early wildfire detection with YOLOv8, FastAPI and Swift. ALIZH-PROCTORING: automated online exam proctoring. SmartCampus: native iOS campus app in Swift and SwiftUI.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="260" viewBox="0 0 850 260" fill="none" role="img" aria-labelledby="projTitle projDesc">
+  <title id="projTitle">Shipped Work — FireWatch-AI, jas-crm, KitchenApp</title>
+  <desc id="projDesc">Three flagship projects with concrete engineering details: FireWatch-AI (4 Kazakhstan cities HLS monitoring), jas-crm (production CRM for education curators), and KitchenApp (offline-first SwiftUI recipe app).</desc>
   <style>
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif; }
     .mono { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; }
-    .live { animation: pulse 2.4s ease-in-out infinite; }
-    @keyframes pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+    .dot-live { animation: pulse 2.6s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
     @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
   </style>
   <defs>
-    <clipPath id="workClip"><rect x="0.5" y="0.5" width="849" height="249" rx="14"/></clipPath>
-    <radialGradient id="workGlow" cx="425" cy="250" r="420" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#7C6CF6" stop-opacity=".14"/>
+    <clipPath id="projClip"><rect x="0.5" y="0.5" width="849" height="259" rx="14"/></clipPath>
+    <radialGradient id="projGlow" cx="425" cy="260" r="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C6CF6" stop-opacity="0.12"/>
       <stop offset="1" stop-color="#7C6CF6" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="wLineL" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="pLineL" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#F3DEC2" stop-opacity="0"/>
-      <stop offset="1" stop-color="#F3DEC2" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#F3DEC2" stop-opacity="0.55"/>
     </linearGradient>
-    <linearGradient id="wLineR" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#F3DEC2" stop-opacity=".6"/>
+    <linearGradient id="pLineR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F3DEC2" stop-opacity="0.55"/>
       <stop offset="1" stop-color="#F3DEC2" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="topEdge" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#D5C8FF" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#D5C8FF" stop-opacity=".7"/>
+      <stop offset="0.5" stop-color="#D5C8FF" stop-opacity="0.65"/>
       <stop offset="1" stop-color="#D5C8FF" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="iconPeach" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F3DEC2"/>
-      <stop offset="1" stop-color="#E6C29F"/>
-    </linearGradient>
-    <linearGradient id="iconIndigo" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#9487FA"/>
-      <stop offset="1" stop-color="#7C6CF6"/>
-    </linearGradient>
-    <linearGradient id="iconLavender" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#EDE6FF"/>
-      <stop offset="1" stop-color="#D5C8FF"/>
     </linearGradient>
   </defs>
 
-  <g clip-path="url(#workClip)">
-    <rect width="850" height="250" fill="#0D0E14"/>
-    <rect width="850" height="250" fill="url(#workGlow)"/>
+  <g clip-path="url(#projClip)">
+    <rect width="850" height="260" fill="#0D0E14"/>
+    <rect width="850" height="260" fill="url(#projGlow)"/>
 
-    <!-- heading -->
-    <rect x="266" y="37" width="58" height="1" fill="url(#wLineL)"/>
-    <text class="sans" x="425" y="42" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="6" fill="#F3DEC2">FEATURED WORK</text>
-    <rect x="530" y="37" width="58" height="1" fill="url(#wLineR)"/>
+    <!-- Section Header -->
+    <rect x="272" y="36" width="58" height="1" fill="url(#pLineL)"/>
+    <text class="sans" x="425" y="41" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="5.5" fill="#F3DEC2">SHIPPED WORK</text>
+    <rect x="520" y="36" width="58" height="1" fill="url(#pLineR)"/>
 
-    <!-- 01 FireWatch-AI -->
-    <rect x="32.5" y="68.5" width="249" height="163" rx="12" fill="#12131B" stroke="#1F222E"/>
-    <rect x="56" y="68" width="202" height="1" fill="url(#edge)"/>
-    <rect x="52" y="88" width="36" height="36" rx="10" fill="url(#iconPeach)"/>
-    <path transform="translate(70 106)" d="M0 -11 C5 -5 9 -1 9 4 C9 9.5 5 12 0 12 C-5 12 -9 9.5 -9 4 C-9 0 -6 -3 -4 -6 C-3 -2 -1 -1 1 -1 C1 -5 0 -8 0 -11 Z" fill="#1B140C"/>
-    <circle class="live" cx="222" cy="101" r="3" fill="#E6C29F"/>
-    <text class="mono" x="262" y="105" text-anchor="end" font-size="10" letter-spacing="1" fill="#71717A">01</text>
-    <text class="sans" x="52" y="152" font-size="17" font-weight="700" fill="#FFFFFF">FireWatch-AI</text>
-    <text class="sans" x="52" y="174" font-size="12" fill="#A1A1AA">Early wildfire &amp; smoke detection</text>
-    <text class="sans" x="52" y="190" font-size="12" fill="#A1A1AA">on live camera streams.</text>
-    <g class="mono" font-size="10" text-anchor="middle" fill="#D5C8FF">
-      <rect x="52.5" y="204.5" width="51" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
-      <text x="78" y="216.5">YOLOv8</text>
-      <rect x="110.5" y="204.5" width="57" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
-      <text x="139" y="216.5">FastAPI</text>
-      <rect x="174.5" y="204.5" width="45" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
-      <text x="197" y="216.5">Swift</text>
+    <!-- Card 1: FireWatch-AI -->
+    <rect x="28.5" y="64.5" width="254" height="175" rx="12" fill="#12131B" stroke="#1F222E"/>
+    <rect x="52" y="64" width="206" height="1" fill="url(#topEdge)"/>
+    <circle class="dot-live" cx="48" cy="88" r="3.5" fill="#E6C29F"/>
+    <text class="mono" x="58" y="92" font-size="10" letter-spacing="1" fill="#E6C29F">PUBLIC · iOS + AI</text>
+    <text class="sans" x="44" y="122" font-size="18" font-weight="700" fill="#FFFFFF">FireWatch-AI</text>
+    <text class="sans" x="44" y="143" font-size="12" fill="#A1A1AA">Native SwiftUI HLS viewer across</text>
+    <text class="sans" x="44" y="159" font-size="12" fill="#A1A1AA">4 KZ cities with runtime .m3u8</text>
+    <text class="sans" x="44" y="175" font-size="12" fill="#A1A1AA">probing &amp; FastAPI/YOLOv8 server.</text>
+    <text class="mono" x="44" y="198" font-size="10.5" fill="#F3DEC2">→ 9/9 CI-verified HLS feeds</text>
+    <g class="mono" font-size="9.5" text-anchor="middle" fill="#D5C8FF">
+      <rect x="44.5" y="211.5" width="48" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
+      <text x="68.5" y="223">SwiftUI</text>
+      <rect x="98.5" y="211.5" width="52" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
+      <text x="124.5" y="223">AVPlayer</text>
+      <rect x="156.5" y="211.5" width="52" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
+      <text x="182.5" y="223">YOLOv8</text>
     </g>
 
-    <!-- 02 ALIZH-PROCTORING -->
-    <rect x="300.5" y="68.5" width="249" height="163" rx="12" fill="#12131B" stroke="#1F222E"/>
-    <rect x="324" y="68" width="202" height="1" fill="url(#edge)"/>
-    <rect x="320" y="88" width="36" height="36" rx="10" fill="url(#iconIndigo)"/>
-    <g transform="translate(338 106)">
-      <path d="M-11 0 C-7 -7 7 -7 11 0 C7 7 -7 7 -11 0 Z" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"/>
-      <circle r="3.5" fill="#FFFFFF"/>
-    </g>
-    <text class="mono" x="530" y="105" text-anchor="end" font-size="10" letter-spacing="1" fill="#71717A">02</text>
-    <text class="sans" x="320" y="152" font-size="17" font-weight="700" fill="#FFFFFF">ALIZH-PROCTORING</text>
-    <text class="sans" x="320" y="174" font-size="12" fill="#A1A1AA">Automated online exam proctoring</text>
-    <text class="sans" x="320" y="190" font-size="12" fill="#A1A1AA">with camera &amp; mic verification.</text>
-    <g class="mono" font-size="10" text-anchor="middle" fill="#D5C8FF">
-      <rect x="320.5" y="204.5" width="57" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
-      <text x="349" y="216.5">Next.js</text>
-      <rect x="384.5" y="204.5" width="75" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
-      <text x="422" y="216.5">TypeScript</text>
-      <rect x="466.5" y="204.5" width="63" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
-      <text x="498" y="216.5">Tailwind</text>
+    <!-- Card 2: jas-crm -->
+    <rect x="298.5" y="64.5" width="254" height="175" rx="12" fill="#12131B" stroke="#1F222E"/>
+    <rect x="322" y="64" width="206" height="1" fill="url(#topEdge)"/>
+    <circle cx="318" cy="88" r="3.5" fill="#7C6CF6"/>
+    <text class="mono" x="328" y="92" font-size="10" letter-spacing="1" fill="#D5C8FF">PRIVATE · PRODUCTION</text>
+    <text class="sans" x="314" y="122" font-size="18" font-weight="700" fill="#FFFFFF">jas-crm</text>
+    <text class="sans" x="314" y="143" font-size="12" fill="#A1A1AA">Daily mobile &amp; web CRM for</text>
+    <text class="sans" x="314" y="159" font-size="12" fill="#A1A1AA">education curators: attendance,</text>
+    <text class="sans" x="314" y="175" font-size="12" fill="#A1A1AA">schedules, chat &amp; KPI analytics.</text>
+    <text class="mono" x="314" y="198" font-size="10.5" fill="#F3DEC2">→ Excel &amp; Telegram auto-exports</text>
+    <g class="mono" font-size="9.5" text-anchor="middle" fill="#D5C8FF">
+      <rect x="314.5" y="211.5" width="66" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
+      <text x="347.5" y="223">Full-Stack</text>
+      <rect x="386.5" y="211.5" width="44" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
+      <text x="408.5" y="223">CRM</text>
+      <rect x="436.5" y="211.5" width="58" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
+      <text x="465.5" y="223">Telegram</text>
     </g>
 
-    <!-- 03 SmartCampus -->
-    <rect x="568.5" y="68.5" width="249" height="163" rx="12" fill="#12131B" stroke="#1F222E"/>
-    <rect x="592" y="68" width="202" height="1" fill="url(#edge)"/>
-    <rect x="588" y="88" width="36" height="36" rx="10" fill="url(#iconLavender)"/>
-    <g transform="translate(606 106)" fill="#1B1838">
-      <path d="M-10 -3 L0 -10 L10 -3 Z"/>
-      <rect x="-7.5" y="-1" width="3" height="8" rx=".5"/>
-      <rect x="-1.5" y="-1" width="3" height="8" rx=".5"/>
-      <rect x="4.5" y="-1" width="3" height="8" rx=".5"/>
-      <rect x="-9" y="8" width="18" height="2.5" rx="1"/>
-    </g>
-    <text class="mono" x="798" y="105" text-anchor="end" font-size="10" letter-spacing="1" fill="#71717A">03</text>
-    <text class="sans" x="588" y="152" font-size="17" font-weight="700" fill="#FFFFFF">SmartCampus</text>
-    <text class="sans" x="588" y="174" font-size="12" fill="#A1A1AA">Native iOS campus access app</text>
-    <text class="sans" x="588" y="190" font-size="12" fill="#A1A1AA">built with Swift &amp; SwiftUI.</text>
-    <g class="mono" font-size="10" text-anchor="middle" fill="#D5C8FF">
-      <rect x="588.5" y="204.5" width="45" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
-      <text x="611" y="216.5">Swift</text>
-      <rect x="640.5" y="204.5" width="57" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
-      <text x="669" y="216.5">SwiftUI</text>
-      <rect x="704.5" y="204.5" width="51" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
-      <text x="730" y="216.5">XCTest</text>
+    <!-- Card 3: KitchenApp -->
+    <rect x="568.5" y="64.5" width="254" height="175" rx="12" fill="#12131B" stroke="#1F222E"/>
+    <rect x="592" y="64" width="206" height="1" fill="url(#topEdge)"/>
+    <circle cx="588" cy="88" r="3.5" fill="#22C55E"/>
+    <text class="mono" x="598" y="92" font-size="10" letter-spacing="1" fill="#A1A1AA">PUBLIC · iOS APP</text>
+    <text class="sans" x="584" y="122" font-size="18" font-weight="700" fill="#FFFFFF">KitchenApp</text>
+    <text class="sans" x="584" y="143" font-size="12" fill="#A1A1AA">Offline-first recipe manager in</text>
+    <text class="sans" x="584" y="159" font-size="12" fill="#A1A1AA">SwiftUI (MVVM) with debounced</text>
+    <text class="sans" x="584" y="175" font-size="12" fill="#A1A1AA">search, pagination &amp; live chat.</text>
+    <text class="mono" x="584" y="198" font-size="10.5" fill="#F3DEC2">→ Core Data + Firebase sync</text>
+    <g class="mono" font-size="9.5" text-anchor="middle" fill="#D5C8FF">
+      <rect x="584.5" y="211.5" width="48" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
+      <text x="608.5" y="223">SwiftUI</text>
+      <rect x="638.5" y="211.5" width="60" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
+      <text x="668.5" y="223">CoreData</text>
+      <rect x="704.5" y="211.5" width="58" height="17" rx="8.5" fill="#1A1830" stroke="#2A264A"/>
+      <text x="733.5" y="223">Firebase</text>
     </g>
   </g>
 
-  <rect x="0.5" y="0.5" width="849" height="249" rx="14" stroke="#1F222E"/>
+  <rect x="0.5" y="0.5" width="849" height="259" rx="14" stroke="#1F222E"/>
 </svg>

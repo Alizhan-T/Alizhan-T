@@ -1,44 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="850" height="250" viewBox="0 0 850 250" fill="none" role="img" aria-labelledby="aboutTitle aboutDesc">
-  <title id="aboutTitle">About Me — Hello, World</title>
-  <desc id="aboutDesc">Software Engineering student from Astana, Kazakhstan (AITU), building AI and Computer Vision systems, native iOS apps, and Full-Stack / Web3 products. Always curious, always shipping something new.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="205" viewBox="0 0 850 205" fill="none" role="img" aria-labelledby="aboutTitle aboutDesc">
+  <title id="aboutTitle">About Alizhan — iOS &amp; Full-Stack Engineer</title>
+  <desc id="aboutDesc">Software Engineering student at AITU in Astana, Kazakhstan building native SwiftUI apps and Python/Node backends for real workflows.</desc>
   <style>
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif; }
     .mono { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; }
 
-    /* Calm, organic Figma cursor journey around the text with natural pauses; alternate avoids ever crossing the headline */
     .figma-cursor {
       animation: roam 15s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
     }
 
     @keyframes roam {
-      0%, 16%   { transform: translate(56px, 178px); }
-      28%, 45%  { transform: translate(112px, 68px); }
-      58%, 74%  { transform: translate(226px, 14px); }
-      86%, 100% { transform: translate(654px, 24px); }
+      0%, 16%   { transform: translate(44px, 144px); }
+      28%, 45%  { transform: translate(96px, 52px); }
+      58%, 74%  { transform: translate(218px, 10px); }
+      86%, 100% { transform: translate(664px, 18px); }
     }
 
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; }
-      .figma-cursor { transform: translate(118px, 68px); }
+      .figma-cursor { transform: translate(96px, 52px); }
     }
   </style>
   <defs>
     <clipPath id="aboutClip">
-      <rect x="0.5" y="0.5" width="849" height="249" rx="14"/>
+      <rect x="0.5" y="0.5" width="849" height="204" rx="14"/>
     </clipPath>
     <pattern id="dotGrid" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="11" cy="11" r="0.9" fill="#FFFFFF" fill-opacity="0.06"/>
+      <circle cx="11" cy="11" r="0.9" fill="#FFFFFF" fill-opacity="0.05"/>
     </pattern>
-    <radialGradient id="gridMaskGrad" cx="425" cy="125" r="420" gradientUnits="userSpaceOnUse">
+    <radialGradient id="gridMaskGrad" cx="425" cy="102" r="400" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/>
       <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </radialGradient>
     <mask id="gridMask">
-      <rect width="850" height="250" fill="url(#gridMaskGrad)"/>
+      <rect width="850" height="205" fill="url(#gridMaskGrad)"/>
     </mask>
-    <radialGradient id="aboutAmbient" cx="425" cy="116" r="320" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#7C6CF6" stop-opacity="0.16"/>
-      <stop offset="0.6" stop-color="#7C6CF6" stop-opacity="0.03"/>
+    <radialGradient id="aboutAmbient" cx="425" cy="96" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C6CF6" stop-opacity="0.14"/>
       <stop offset="1" stop-color="#7C6CF6" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="cursorPill" x1="0" y1="0" x2="1" y2="1">
@@ -46,34 +44,32 @@
       <stop offset="1" stop-color="#F59E0B"/>
     </linearGradient>
     <filter id="cursorShadow" x="-30%" y="-30%" width="170%" height="180%">
-      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.45"/>
     </filter>
   </defs>
 
   <g clip-path="url(#aboutClip)">
-    <rect width="850" height="250" fill="#0D0E14"/>
-    <rect width="850" height="250" fill="url(#dotGrid)" mask="url(#gridMask)"/>
-    <rect width="850" height="250" fill="url(#aboutAmbient)"/>
+    <rect width="850" height="205" fill="#0D0E14"/>
+    <rect width="850" height="205" fill="url(#dotGrid)" mask="url(#gridMask)"/>
+    <rect width="850" height="205" fill="url(#aboutAmbient)"/>
 
-    <!-- Centered typography -->
-    <text class="mono" x="425" y="72" text-anchor="middle" font-size="11.5" font-weight="500" letter-spacing="5.5" fill="#A1A1AA">ABOUT ME</text>
+    <text class="mono" x="425" y="54" text-anchor="middle" font-size="11" font-weight="500" letter-spacing="4.5" fill="#A1A1AA">ASTANA, KAZAKHSTAN · AITU</text>
 
-    <text class="sans" x="425" y="118" text-anchor="middle" font-size="40" font-weight="800" letter-spacing="-0.8" fill="#FFFFFF">Hello, World</text>
+    <text class="sans" x="425" y="96" text-anchor="middle" font-size="34" font-weight="800" letter-spacing="-0.7" fill="#FFFFFF">iOS &amp; Full-Stack Engineer</text>
 
-    <text class="sans" x="425" y="156" text-anchor="middle" font-size="14.5" fill="#D4D4D8">Software Engineering student from Astana, Kazakhstan (AITU),</text>
-    <text class="sans" x="425" y="178" text-anchor="middle" font-size="14.5" fill="#D4D4D8">building AI &amp; Computer Vision systems, native iOS apps, and Full-Stack / Web3 products.</text>
+    <text class="sans" x="425" y="130" text-anchor="middle" font-size="14" fill="#D4D4D8">I build native SwiftUI apps and Python / Node backends for practical daily workflows:</text>
+    <text class="sans" x="425" y="151" text-anchor="middle" font-size="14" fill="#D4D4D8">live HLS camera streams across Kazakhstan, curator CRM systems, and offline-first mobile tools.</text>
 
-    <text class="sans" x="425" y="214" text-anchor="middle" font-size="13" font-style="italic" fill="#71717A">Always curious, always shipping something new.</text>
+    <text class="mono" x="425" y="182" text-anchor="middle" font-size="11.5" fill="#71717A">Open to iOS / Full-Stack engineering roles · alizhan-t.github.io</text>
 
-    <!-- Single decorative Figma cursor (arrow + tilted orange badge) -->
     <g class="figma-cursor" filter="url(#cursorShadow)">
-      <path d="M0 0 L0 21 L5.6 15.8 L9.6 24.5 L13.2 22.8 L9.3 14.3 L16.6 14.3 Z" fill="#F59E0B" stroke="#0D0E14" stroke-width="1.5" stroke-linejoin="round"/>
-      <g transform="translate(15 22) rotate(-6)">
-        <rect width="74" height="23" rx="7" fill="url(#cursorPill)"/>
-        <text class="sans" x="37" y="15.5" text-anchor="middle" font-size="12" font-weight="700" fill="#18120B">Alizhan</text>
+      <path d="M0 0 L0 20 L5.4 15.2 L9.2 23.5 L12.6 21.8 L8.8 13.7 L15.8 13.7 Z" fill="#F59E0B" stroke="#0D0E14" stroke-width="1.4" stroke-linejoin="round"/>
+      <g transform="translate(14 21) rotate(-6)">
+        <rect width="70" height="22" rx="7" fill="url(#cursorPill)"/>
+        <text class="sans" x="35" y="15" text-anchor="middle" font-size="11.5" font-weight="700" fill="#18120B">Alizhan</text>
       </g>
     </g>
   </g>
 
-  <rect x="0.5" y="0.5" width="849" height="249" rx="14" stroke="#1F222E"/>
+  <rect x="0.5" y="0.5" width="849" height="204" rx="14" stroke="#1F222E"/>
 </svg>

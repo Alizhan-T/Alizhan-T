@@ -1,23 +1,27 @@
 <p align="center">
-  <img src="./assets/hero.svg" width="100%" alt="Welcome to Alizhan Github — $ git push --force-of-will" />
-</p>
-
-<br />
-
-<p align="center">
-  <img src="./assets/about-me.svg" width="100%" alt="About Me — Hello, World. Software Engineering student from Astana, Kazakhstan (AITU)." />
-</p>
-
-<br />
-
-<p align="center">
-  <img src="./assets/tech-stack.svg" width="100%" alt="Tech Stack — Python, Swift, Node.js, Flutter, Solidity, Docker" />
-</p>
-
-<br />
-
-<p align="center">
-  <a href="https://alizhan-t.github.io/#eye">
-    <img src="./assets/ascii-eye.svg" width="100%" alt="Minimalist ASCII eye" />
+  <a href="https://alizhan-t.github.io/">
+    <img src="./assets/hero.svg" width="100%" alt="Alizhan Toleukhan — iOS & Full-Stack Engineer" />
   </a>
+</p>
+
+<p align="center">
+  <img src="./assets/about-me.svg" width="100%" alt="Astana, Kazakhstan · AITU — Building native SwiftUI apps and Python/Node backends" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/Alizhan-T?tab=repositories">
+    <img src="./assets/projects.svg" width="100%" alt="Shipped Work: FireWatch-AI, jas-crm, KitchenApp" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Alizhan-T/FireWatch-AI">FireWatch-AI ↗</a> &nbsp;·&nbsp;
+  <a href="https://github.com/Alizhan-T/KitchenApp">KitchenApp ↗</a> &nbsp;·&nbsp;
+  <a href="https://github.com/Alizhan-T/MultiverseWiki">MultiverseWiki ↗</a> &nbsp;·&nbsp;
+  <a href="https://github.com/Alizhan-T/alizhmarket">ALIZHMARKET ↗</a> &nbsp;·&nbsp;
+  <a href="https://alizhan-t.github.io/">Portfolio ↗</a>
+</p>
+
+<p align="center">
+  <img src="./assets/tech-stack.svg" width="100%" alt="Tech Stack: Python, Swift, Node.js, Flutter, Solidity, Docker" />
 </p>
