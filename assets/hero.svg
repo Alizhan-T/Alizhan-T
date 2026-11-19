@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="240" viewBox="0 0 850 240" fill="none" role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">Welcome to Alizhan GitHub</title>
+  <desc id="heroDesc">Dark landing hero with a perspective wireframe grid, a glowing headline and a terminal line: $ git push --force-of-will</desc>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; }
+    .glow { animation: pulse 6s ease-in-out infinite; }
+    .cursor { animation: blink 1.1s steps(1) infinite; }
+    .cube { animation: float 7s ease-in-out infinite; }
+    .meridian { transform-box: fill-box; transform-origin: center; animation: spin 9s ease-in-out infinite; }
+    .dot { animation: pulse 2.4s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { opacity: .7; } 50% { opacity: 1; } }
+    @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+    @keyframes spin { 0%, 100% { transform: scaleX(1); } 50% { transform: scaleX(.12); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <defs>
+    <clipPath id="heroClip">
+      <rect x="0.5" y="0.5" width="849" height="239" rx="14"/>
+    </clipPath>
+    <radialGradient id="heroGlow" cx="425" cy="118" r="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C6CF6" stop-opacity=".34"/>
+      <stop offset=".45" stop-color="#7C6CF6" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#7C6CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="heroPeachGlow" cx="640" cy="20" r="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E6C29F" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#E6C29F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gridFade" x1="0" y1="138" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset=".55" stop-color="#FFFFFF" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="gridMask">
+      <rect width="850" height="240" fill="url(#gridFade)"/>
+    </mask>
+    <linearGradient id="titleFill" x1="200" y1="0" x2="660" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D5C8FF"/>
+    </linearGradient>
+    <linearGradient id="peachFill" x1="0" y1="96" x2="0" y2="132" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F3DEC2"/>
+      <stop offset="1" stop-color="#E6C29F"/>
+    </linearGradient>
+    <filter id="titleBlur" x="-20%" y="-80%" width="140%" height="260%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#heroClip)">
+    <rect width="850" height="240" fill="#0D0E14"/>
+    <rect class="glow" width="850" height="240" fill="url(#heroGlow)"/>
+    <rect width="850" height="240" fill="url(#heroPeachGlow)"/>
+
+    <!-- perspective wireframe floor -->
+    <g mask="url(#gridMask)" stroke="#7C6CF6" stroke-opacity=".45" stroke-width="1">
+      <path d="M425 138 L-385 240 M425 138 L-295 240 M425 138 L-205 240 M425 138 L-115 240 M425 138 L-25 240 M425 138 L65 240 M425 138 L155 240 M425 138 L245 240 M425 138 L335 240 M425 138 L425 240 M425 138 L515 240 M425 138 L605 240 M425 138 L695 240 M425 138 L785 240 M425 138 L875 240 M425 138 L965 240 M425 138 L1055 240 M425 138 L1145 240 M425 138 L1235 240"/>
+      <path d="M0 144 H850 M0 151 H850 M0 161 H850 M0 175 H850 M0 194 H850 M0 220 H850"/>
+    </g>
+
+    <!-- wireframe cube, top left -->
+    <g class="cube" stroke="#D5C8FF" stroke-opacity=".22" stroke-width="1">
+      <path d="M84 40 L108 52 L84 64 L60 52 Z M60 52 V80 L84 92 L108 80 V52 M84 64 V92"/>
+      <path d="M60 80 L84 68 L108 80 M84 68 V40" stroke-dasharray="2 3" stroke-opacity=".12"/>
+    </g>
+
+    <!-- wireframe globe, top right -->
+    <g stroke="#D5C8FF" stroke-opacity=".2" stroke-width="1">
+      <circle cx="770" cy="64" r="40"/>
+      <ellipse cx="770" cy="64" rx="40" ry="12"/>
+      <ellipse cx="770" cy="50" rx="34" ry="8" stroke-opacity=".12"/>
+      <ellipse cx="770" cy="78" rx="34" ry="8" stroke-opacity=".12"/>
+      <ellipse class="meridian" cx="770" cy="64" rx="22" ry="40"/>
+      <ellipse cx="770" cy="64" rx="8" ry="40" stroke-opacity=".12"/>
+    </g>
+
+    <!-- stars -->
+    <g fill="#FFFFFF">
+      <circle cx="196" cy="34" r="1" fill-opacity=".35"/>
+      <circle cx="318" cy="22" r="1.2" fill-opacity=".25"/>
+      <circle cx="560" cy="30" r="1" fill-opacity=".3"/>
+      <circle cx="660" cy="96" r="1" fill-opacity=".2"/>
+      <circle cx="150" cy="112" r="1" fill-opacity=".2"/>
+      <circle cx="702" cy="20" r="1.2" fill-opacity=".3"/>
+    </g>
+
+    <!-- eyebrow label -->
+    <text class="mono" x="425" y="72" text-anchor="middle" font-size="11" letter-spacing="3" fill="#71717A">AI · iOS · FULL-STACK · WEB3</text>
+
+    <!-- headline glow -->
+    <text class="sans glow" x="425" y="126" text-anchor="middle" font-size="42" font-weight="800" letter-spacing="-1" fill="#7C6CF6" fill-opacity=".6" filter="url(#titleBlur)">Welcome to Alizhan GitHub</text>
+    <!-- headline -->
+    <text class="sans" x="425" y="126" text-anchor="middle" font-size="42" font-weight="800" letter-spacing="-1"><tspan fill="url(#titleFill)">Welcome to </tspan><tspan fill="url(#peachFill)">Alizhan</tspan><tspan fill="url(#titleFill)"> GitHub</tspan></text>
+
+    <!-- terminal chip -->
+    <rect x="24.5" y="192.5" width="234" height="28" rx="8" fill="#0D0E14" fill-opacity=".92" stroke="#1F222E"/>
+    <text class="mono" x="38" y="211" font-size="12.5"><tspan fill="#7C6CF6">$ </tspan><tspan fill="#D5C8FF">git push</tspan><tspan fill="#E6C29F"> --force-of-will</tspan></text>
+    <rect class="cursor" x="238" y="200" width="7" height="14" rx="1" fill="#D5C8FF"/>
+
+    <!-- location -->
+    <text class="mono" x="808" y="211" text-anchor="end" font-size="11" letter-spacing="1.5" fill="#71717A">ASTANA · KZ</text>
+    <circle class="dot" cx="818" cy="207" r="3" fill="#7C6CF6"/>
+  </g>
+
+  <rect x="0.5" y="0.5" width="849" height="239" rx="14" stroke="#1F222E"/>
+</svg>
