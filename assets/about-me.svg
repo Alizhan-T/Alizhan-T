@@ -1,92 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="850" height="240" viewBox="0 0 850 240" fill="none" role="img" aria-labelledby="aboutTitle aboutDesc">
-  <title id="aboutTitle">About me — Hello, World</title>
-  <desc id="aboutDesc">Software Engineering student at AITU in Astana, Kazakhstan, exploring AI and Computer Vision, native iOS, backend and Web3. Always curious, always shipping something new.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="250" viewBox="0 0 850 250" fill="none" role="img" aria-labelledby="aboutTitle aboutDesc">
+  <title id="aboutTitle">About Me — Hello, World</title>
+  <desc id="aboutDesc">Software Engineering student from Astana, Kazakhstan (AITU), building AI and Computer Vision systems, native iOS apps, and Full-Stack / Web3 products. Always curious, always shipping something new.</desc>
   <style>
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif; }
     .mono { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; }
-    .float-a { animation: hover 5s ease-in-out infinite; }
-    .float-b { animation: hover-b 6.5s ease-in-out infinite; }
-    @keyframes hover { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(6px, -8px); } }
-    @keyframes hover-b { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-7px, 6px); } }
-    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+
+    /* Calm, organic Figma cursor journey around the text with natural pauses; alternate avoids ever crossing the headline */
+    .figma-cursor {
+      animation: roam 15s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+    }
+
+    @keyframes roam {
+      0%, 16%   { transform: translate(56px, 178px); }
+      28%, 45%  { transform: translate(112px, 68px); }
+      58%, 74%  { transform: translate(226px, 14px); }
+      86%, 100% { transform: translate(654px, 24px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .figma-cursor { transform: translate(118px, 68px); }
+    }
   </style>
   <defs>
     <clipPath id="aboutClip">
-      <rect x="0.5" y="0.5" width="849" height="239" rx="14"/>
+      <rect x="0.5" y="0.5" width="849" height="249" rx="14"/>
     </clipPath>
-    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="10" cy="10" r=".9" fill="#FFFFFF" fill-opacity=".08"/>
+    <pattern id="dotGrid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="11" r="0.9" fill="#FFFFFF" fill-opacity="0.06"/>
     </pattern>
-    <radialGradient id="dotsFade" cx="425" cy="120" r="420" gradientUnits="userSpaceOnUse">
+    <radialGradient id="gridMaskGrad" cx="425" cy="125" r="420" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/>
       <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </radialGradient>
-    <mask id="dotsMask">
-      <rect width="850" height="240" fill="url(#dotsFade)"/>
+    <mask id="gridMask">
+      <rect width="850" height="250" fill="url(#gridMaskGrad)"/>
     </mask>
-    <radialGradient id="aboutGlow" cx="425" cy="110" r="300" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#7C6CF6" stop-opacity=".18"/>
+    <radialGradient id="aboutAmbient" cx="425" cy="116" r="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C6CF6" stop-opacity="0.16"/>
+      <stop offset="0.6" stop-color="#7C6CF6" stop-opacity="0.03"/>
       <stop offset="1" stop-color="#7C6CF6" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="tagPeach" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F3DEC2"/>
-      <stop offset="1" stop-color="#E6C29F"/>
+    <linearGradient id="cursorPill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBBF24"/>
+      <stop offset="1" stop-color="#F59E0B"/>
     </linearGradient>
-    <linearGradient id="headFill" x1="270" y1="0" x2="580" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset="1" stop-color="#D5C8FF"/>
-    </linearGradient>
+    <filter id="cursorShadow" x="-30%" y="-30%" width="170%" height="180%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
   </defs>
 
   <g clip-path="url(#aboutClip)">
-    <rect width="850" height="240" fill="#0D0E14"/>
-    <rect width="850" height="240" fill="url(#dots)" mask="url(#dotsMask)"/>
-    <rect width="850" height="240" fill="url(#aboutGlow)"/>
+    <rect width="850" height="250" fill="#0D0E14"/>
+    <rect width="850" height="250" fill="url(#dotGrid)" mask="url(#gridMask)"/>
+    <rect width="850" height="250" fill="url(#aboutAmbient)"/>
 
-    <!-- eyebrow -->
-    <text class="mono" x="425" y="54" text-anchor="middle" font-size="11" letter-spacing="6" fill="#E6C29F">ABOUT ME</text>
+    <!-- Centered typography -->
+    <text class="mono" x="425" y="72" text-anchor="middle" font-size="11.5" font-weight="500" letter-spacing="5.5" fill="#A1A1AA">ABOUT ME</text>
 
-    <!-- Figma selection frame around heading -->
-    <rect x="271.5" y="74.5" width="307" height="50" stroke="#7C6CF6" stroke-opacity=".8"/>
-    <g fill="#0D0E14" stroke="#7C6CF6">
-      <rect x="268.5" y="71.5" width="6" height="6"/>
-      <rect x="575.5" y="71.5" width="6" height="6"/>
-      <rect x="268.5" y="121.5" width="6" height="6"/>
-      <rect x="575.5" y="121.5" width="6" height="6"/>
-    </g>
+    <text class="sans" x="425" y="118" text-anchor="middle" font-size="40" font-weight="800" letter-spacing="-0.8" fill="#FFFFFF">Hello, World</text>
 
-    <!-- heading -->
-    <text class="sans" x="425" y="111" text-anchor="middle" font-size="40" font-weight="800" letter-spacing="-1" fill="url(#headFill)">Hello, World</text>
+    <text class="sans" x="425" y="156" text-anchor="middle" font-size="14.5" fill="#D4D4D8">Software Engineering student from Astana, Kazakhstan (AITU),</text>
+    <text class="sans" x="425" y="178" text-anchor="middle" font-size="14.5" fill="#D4D4D8">building AI &amp; Computer Vision systems, native iOS apps, and Full-Stack / Web3 products.</text>
 
-    <!-- bio -->
-    <text class="sans" x="425" y="156" text-anchor="middle" font-size="15" fill="#A1A1AA">Software Engineering student @ <tspan fill="#FFFFFF" font-weight="600">AITU</tspan> · Astana, Kazakhstan</text>
-    <text class="sans" x="425" y="178" text-anchor="middle" font-size="15" fill="#A1A1AA">Exploring AI &amp; Computer Vision, native iOS, backend and Web3.</text>
+    <text class="sans" x="425" y="214" text-anchor="middle" font-size="13" font-style="italic" fill="#71717A">Always curious, always shipping something new.</text>
 
-    <!-- slogan -->
-    <text class="sans" x="425" y="211" text-anchor="middle" font-size="13" font-style="italic" fill="#71717A">Always curious, always shipping something new.</text>
-
-    <!-- Figma cursor: Alizhan -->
-    <g transform="translate(92 66)">
-      <g class="float-a">
-        <path d="M0 0 L0 24 L6.5 18 L11 28 L15 26.2 L10.6 16.6 L19 16.6 Z" fill="#FFFFFF" stroke="#0D0E14" stroke-width="1.5" stroke-linejoin="round"/>
-        <g transform="translate(16 28) rotate(-6)">
-          <rect width="80" height="26" rx="8" fill="url(#tagPeach)"/>
-          <text class="sans" x="40" y="17.5" text-anchor="middle" font-size="13" font-weight="600" fill="#1B140C">Alizhan</text>
-        </g>
-      </g>
-    </g>
-
-    <!-- Figma cursor: visitor -->
-    <g transform="translate(704 116)">
-      <g class="float-b">
-        <path d="M0 0 L0 24 L6.5 18 L11 28 L15 26.2 L10.6 16.6 L19 16.6 Z" fill="#7C6CF6" stroke="#0D0E14" stroke-width="1.5" stroke-linejoin="round"/>
-        <g transform="translate(16 28) rotate(5)">
-          <rect width="52" height="24" rx="8" fill="#7C6CF6"/>
-          <text class="sans" x="26" y="16.5" text-anchor="middle" font-size="12" font-weight="600" fill="#FFFFFF">you</text>
-        </g>
+    <!-- Single decorative Figma cursor (arrow + tilted orange badge) -->
+    <g class="figma-cursor" filter="url(#cursorShadow)">
+      <path d="M0 0 L0 21 L5.6 15.8 L9.6 24.5 L13.2 22.8 L9.3 14.3 L16.6 14.3 Z" fill="#F59E0B" stroke="#0D0E14" stroke-width="1.5" stroke-linejoin="round"/>
+      <g transform="translate(15 22) rotate(-6)">
+        <rect width="74" height="23" rx="7" fill="url(#cursorPill)"/>
+        <text class="sans" x="37" y="15.5" text-anchor="middle" font-size="12" font-weight="700" fill="#18120B">Alizhan</text>
       </g>
     </g>
   </g>
 
-  <rect x="0.5" y="0.5" width="849" height="239" rx="14" stroke="#1F222E"/>
+  <rect x="0.5" y="0.5" width="849" height="249" rx="14" stroke="#1F222E"/>
 </svg>
