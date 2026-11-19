@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="54" viewBox="0 0 750 54" role="img" aria-labelledby="t d"><title id="t">Building FireWatch-AI and ALIZH-PROCTORING</title><desc id="d">Animated terminal line listing the two featured builds.</desc><style>@keyframes reveal{0%,8%{width:0}58%,100%{width:680px}} @keyframes blink{50%{opacity:.18}}
+.reveal{animation:reveal 7s steps(46,end) infinite}.cursor{animation:blink 1.2s steps(1,end) infinite}
+@media(prefers-reduced-motion:reduce){.reveal,.cursor{animation:none}}</style>
+<defs><clipPath id="type"><rect class="reveal" x="36" y="0" width="680" height="54"/></clipPath></defs>
+<rect x="1" y="1" width="748" height="51" rx="12" fill="#101c2a" stroke="#304651"/><text x="14" y="34" fill="#85e3c8" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="23" font-weight="700" >›</text><g clip-path="url(#type)"><text x="37" y="33" fill="#d1e6e5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="20" font-weight="500" >Building FireWatch-AI and ALIZH-PROCTORING</text><rect class="cursor" x="553" y="17" width="9" height="20" fill="#8deacb"/></g></svg>
