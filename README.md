@@ -28,6 +28,6 @@
 
 <p align="center">
   <a href="https://alizhan-t.github.io/">
-    <img src="./assets/claude-creation-30fps.png" width="100%" alt="Rotating 3D spark & telemetry footer" />
+    <img src="./assets/claude-creation-slow.png" width="100%" alt="Rotating 3D spark & telemetry footer" />
   </a>
 </p>
