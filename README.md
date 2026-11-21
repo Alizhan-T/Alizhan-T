@@ -27,7 +27,7 @@
 </p>
 
 <p align="center">
-  <a href="https://alizhan-t.github.io/#eye">
-    <img src="./assets/eye-v2.svg" width="100%" alt="ASCII Vision & Telemetry Footer" />
+  <a href="https://alizhan-t.github.io/">
+    <img src="./assets/spark.svg" width="100%" alt="Rotating 3D spark & telemetry footer" />
   </a>
 </p>
